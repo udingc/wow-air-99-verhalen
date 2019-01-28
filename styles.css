@@ -30,7 +30,7 @@ header nav {
 }
 
 header nav:after {
-    border-bottom: solid #A6C4C4 1px;
+    border-bottom: solid #A6C4C4 0.0625em;
     content: "";
     width: 100%;
     display: block;
@@ -71,9 +71,9 @@ header nav ul li a {
 
 form {
     background-color: #fafafa;
-    border: solid 1px #A6C4C4;
-    padding: 6.859px;
-    margin-bottom: 40px;
+    border: solid 0.0625em #A6C4C4;
+    padding: 0.429em;
+    margin-bottom: 2.5em;
 }
 
 form h3 {
@@ -94,9 +94,9 @@ form > fieldset {
 }
 
 form fieldset legend {
-    border-bottom: 1px solid #FFDF5D;
+    border-bottom: 0.0625em solid #FFDF5D;
     font-weight: 700;
-    padding-top: 5px;
+    padding-top: 0.3125em;
 }
 
 form a {
@@ -106,11 +106,11 @@ form a {
     color: white;
     text-transform: uppercase;
     line-height: 2em;
-    border-radius: 2px;
-    padding: 8px 15px 8px 15px;
+    border-radius: 0.333em;
+    padding: 0.5em 0.9375em 0.5em 0.9375em;
     font-size: 1em;
     text-decoration: none;
-    margin: 10px 7px 0px 7px;
+    margin: 0.625em 0.4375em 0em 0.4375em;
     float: right;
 }
 
@@ -130,17 +130,17 @@ form > label {
 
 form > label i:first-child {
     background-color: #99258D;
-    margin-right: 10px;
-    margin-top: 4.5px;
-    margin-left: 10px;
+    margin-right: 0.625em;
+    margin-top: 0.281em;
+    margin-left: 0.625em;
     font-size: 0.9em;
 
 }
 
 form > label i:last-child {
     background-color: #99258D;
-    margin-right: 10px;
-    margin-top: 4.5px;
+    margin-right: 0.625em;
+    margin-top: 0.281em;
     font-size: 1em;
     margin-left: auto;
 }
@@ -148,22 +148,23 @@ form > label i:last-child {
 form fieldset label:nth-child(n+2) {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 0.625em;
     color: rgba(153, 37, 141, 1);
-    margin-right: 10px;
+    margin-right: 0.625em;
+    margin-left: -1em;
 }
 
 form fieldset label:nth-child(n+2):hover {
     background: rgba(239, 192, 48, 0.4);
-    padding: 6px 10px;
-    border-radius: 10px;
+    padding: 0.375em 0.625em;
+    border-radius: 0.625em;
 }
 
 form fieldset input[type="radio"]:focus + label,
 form fieldset input[type="radio"]:checked + label {
     background: rgba(239, 192, 48, 1);
-    padding: 6px 10px;
-    border-radius: 10px;
+    padding: 0.375em 0.625em;
+    border-radius: 0.625em;
     color: #2B4040;
 }
 
@@ -171,15 +172,13 @@ form fieldset input {
     opacity: 0;
 }
 
-
-
 form > input {
     position: absolute;
-    left: -999px;
+    left: -62.4375em;
 }
 
 .filteren ~ fieldset {
-    transform: translateY(-4rem);
+    transform: translateY(-2rem);
     pointer-events: none;
     transition: all 0.7s;
 }
@@ -194,7 +193,7 @@ form > input {
     display: block;
     opacity: 1;
     height: 100%;
-    transform: translateY(0);
+    transform: translateY(0.25em);
     pointer-events: auto;
 }
 
@@ -335,7 +334,7 @@ section h5 {
     margin: 0 auto;
     display: inline-flex;
     text-align: center;
-    border-bottom: 2px solid #FFDF5D;
+    border-bottom: 0.125em solid #FFDF5D;
 }
 
 /* footer */
@@ -344,10 +343,10 @@ body > footer {
     margin: -1.4375em;
     background: #F4EEE8;
     padding-bottom: 1em;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
     padding-top: 1em;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 body > footer p:first-of-type {
@@ -386,6 +385,7 @@ body > footer ul li a {
     display: block;
     padding: 1.25em;
     background-color: #99258D;
+    margin-bottom: 1.5em;
 }
 
 #para section h3 {
@@ -423,11 +423,9 @@ body > footer ul li a {
 }
 
 #para embed {
-    padding-top: 20px;
     width: 100%;
-    height: 750px;
+    height: 46.875em;
 }
-
 
 /* javascript download */
 
@@ -435,21 +433,21 @@ nav ul li:nth-of-type(2) {
     position: relative;
 }
 
-nav ul li:nth-of-type(2) section {
+nav ul li:nth-of-type(2) p {
     position: absolute;
     left: 5.5rem;
-    top: -6px;
+    top: -0.9375em;
     display: none;
     background-color: #A6C4C4;
     border-radius: 50%;
-    padding-left: 5px;
-    padding-bottom: 4px;
-    height: 12px;
-    width: 12px;
+    padding-left: 0.3125em;
+    padding-bottom: 0.25em;
+    height: 0.75em;
+    width: 0.75em;
     font-weight: 500;
 }
 
-nav ul li:nth-of-type(2) section.aan {
+nav ul li:nth-of-type(2) p.aan {
     display: block;
 }
 
@@ -484,17 +482,17 @@ nav ul li:nth-of-type(2) section.aan {
     color: white;
     text-transform: uppercase;
     line-height: 2em;
-    border-radius: 2px;
-    padding: 8px 15px 8px 15px;
+    border-radius: 0.125em;
+    padding: 0.5em 0.9375em 0.5em 0.9375em;
     font-size: 1em;
     text-decoration: none;
-    margin: 10px 7px 0px 7px;
+    margin: 0.625em 0.4375em 0em 0.4375em;
 }
 
 /* breakpoint naar tablet */
 
 @media (min-width: 48em) {
-    main {
+    main.index {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
@@ -504,19 +502,24 @@ nav ul li:nth-of-type(2) section.aan {
         font-size: 1em;
     }
 
-    nav ul li:nth-of-type(2) section {
+    nav ul li:nth-of-type(2) p {
         position: absolute;
-        left: 8rem;
-        top: -6px;
+        left: 8.2rem;
+        top: -1.25em;
         display: none;
         background-color: #A6C4C4;
         border-radius: 50%;
-        padding-left: 5px;
-        padding-bottom: 4px;
-        height: 15px;
-        width: 15px;
+        padding-left: 0.3125em;
+        padding-bottom: 0.25em;
+        height: 0.9375em;
+        width: 0.9375em;
         font-weight: 500;
     }
+
+    #para section footer button {
+        font-size: 0.9em;
+    }
+
 }
 
 
@@ -557,7 +560,7 @@ nav ul li:nth-of-type(2) section.aan {
         padding-left: 1.25em;
     }
 
-    main {
+    main.index {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
@@ -576,6 +579,6 @@ nav ul li:nth-of-type(2) section.aan {
     }
 
     section h5 {
-        margin-top: 70px;
+        margin-top: 4.375em;
     }
 }

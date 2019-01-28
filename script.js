@@ -2,80 +2,71 @@
 /*eslint-env browser*/
 /*eslint 'no-console':0*/
 
-// var buttonDownload = document.querySelectorAll("article footer button:nth-child(3)");
-//
-// for (var i = 0; i < buttonDownload.length; i++) {
-//     buttonDownload[i].addEventListener("click", function () {
-//         var melding = document.querySelector("header nav section")
-//         melding.classList.toggle("aan");
-//     })
-// }
 
-var
-    filteren = document.querySelector("form label.filteren")
+// Filteren Form Micro interactie
+var filteren = document.querySelector("form label.filteren");
+
+// Filteren form kun je uit en in klappen bij scherm kleiner dan 976
 filteren.addEventListener("click", function () {
     if (window.innerWidth < 976) {
         this.classList.toggle("active");
     }
-})
+});
 
-// Filter desktop
-
-window.addEventListener('resize', function () {
+// Filteren form wordt bij RESIZE van scherm opengeklapt
+window.addEventListener("resize", function () {
     if (window.innerWidth > 976) {
-        filteren.classList.add('active')
+        filteren.classList.add("active");
     }
-})
-// automatisch openklappen
+});
+
+//Filteren form wordt automatisch opengeklapt als het scherm groter is dan 976
 if (window.innerWidth > 976) {
-    filteren.classList.add('active')
+    filteren.classList.add("active");
 }
 
-// DL buttons + notifi
-const
-    dlButtons = document.querySelectorAll('.dlButton')
+////////////////////////////////////////////////////////////////////////////////////////////////
 
-var
-    nNoti = 0
+// Download button + Notificatie Micro Interactie
+var dlButtons = document.querySelectorAll('.dlButton');
+var nNoti = 0;
+var i;
+var el;
 
-for (let i = 0; i < dlButtons.length; i++) {
-    const el = dlButtons[i]
-
-    el.addEventListener('click', dlStory)
-
+for (i = 0; i < dlButtons.length; i++) {
+    el = dlButtons[i].addEventListener('click', dlStory);
 }
 
+// Als het download icoon is aangeklikt wordt deze functie uitgevoerd
 function dlStory() {
-    const
-        notification = document.querySelector('.notification')
+    var notification = document.querySelector('.notification');
 
-    notification.classList.add('aan')
+    notification.classList.add('aan');
 
     if (this.querySelector('i').classList.contains('fa-download')) {
-        this.querySelector('i').classList.remove('fa-download')
-        this.querySelector('i').classList.add('fa-check')
+        this.querySelector('i').classList.remove('fa-download');
+        this.querySelector('i').classList.add('fa-check');
 
-        nNoti += 1
-        notification.textContent = nNoti
+        nNoti += 1;
+        notification.textContent = nNoti;
     }
 }
 
-// popup
-const
-    popup = document.getElementById('popup'),
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Er verschijnt een popup in het scherm als je een verhaal hebt toegevoegt aan 'MIJN LIJST' (extra)
+
+var popup = document.getElementById('popup'),
     enablePopup = document.querySelectorAll('.togglePopup');
 
+for (i = 0; i < enablePopup.length; i++) {
+    el = enablePopup[i];
 
-
-for (let i = 0; i < enablePopup.length; i++) {
-    const el = enablePopup[i];
-
-    el.addEventListener('click', getPopup)
-
+    el.addEventListener('click', getPopup);
 }
 
 function getPopup() {
-    popup.classList.toggle('hidden')
+    popup.classList.toggle('hidden');
 }
 
 // Geholpen door Maikel Sleebos
