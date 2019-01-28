@@ -531,7 +531,7 @@ nav ul li:nth-of-type(2) p.aan {
 
 @media (min-width: 61em) {
     #heroBanner {
-        background-image: url('/pictures/banner.jpeg');
+        background-image: url('pictures/banner.jpeg');
         background-size: cover;
         height: 24rem;
         position: relative;
